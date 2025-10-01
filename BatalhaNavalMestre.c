@@ -41,7 +41,7 @@ int main() {
         if ((linha_dd + i < TAB_LIN) && (coluna_dd + i < TAB_COL))
             tabuleiro[linha_dd + i][coluna_dd + i] = 3;
 
-    // Navio 4 Diagonal esquerda (corrigido para não ultrapassar borda)
+    // Navio 4 Diagonal esquerda
     if (coluna_de - (navio4 - 1) >= 0) {
         for (int i = 0; i < navio4; i++)
             tabuleiro[linha_de + i][coluna_de - i] = 3;
@@ -121,6 +121,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
